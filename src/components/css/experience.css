@@ -1,0 +1,133 @@
+#experience .experience__main-title {
+  width: 35%;
+  margin: 0 auto;
+  border-radius: 2rem;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  -webkit-transition-delay: all .4s;
+          transition-delay: all .4s;
+}
+
+#experience .experience__main-title:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#experience .experience__main-title-anim {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: -webkit-gradient(linear, left top, right top, color-stop(16%, rgba(31, 31, 56, 0.35)), color-stop(29%, rgba(77, 181, 255, 0.3)), color-stop(63%, rgba(44, 44, 108, 0.4)));
+  background: linear-gradient(90deg, rgba(31, 31, 56, 0.35) 16%, rgba(77, 181, 255, 0.3) 29%, rgba(44, 44, 108, 0.4) 63%);
+}
+
+#experience .experience__container {
+  background: -webkit-gradient(linear, left top, right top, color-stop(16%, rgba(31, 31, 56, 0.762342)), color-stop(29%, rgba(77, 181, 255, 0.400998)), color-stop(63%, rgba(44, 44, 108, 0.908001)));
+  background: linear-gradient(90deg, rgba(31, 31, 56, 0.762342) 16%, rgba(77, 181, 255, 0.400998) 29%, rgba(44, 44, 108, 0.908001) 63%);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+#experience .experience__container .experience__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#experience .experience__container .experience__content .html:nth-of-type(1) svg {
+  color: #e54c21;
+}
+
+#experience .experience__container .experience__content .css:nth-of-type(2) svg {
+  color: #072392;
+}
+
+#experience .experience__container .experience__content .javascript:nth-of-type(3) svg {
+  color: yellow;
+}
+
+#experience .experience__container .experience__content .react:nth-of-type(4) svg {
+  color: #61dbfb;
+}
+
+#experience .experience__container .experience__content .git:nth-of-type(5) svg {
+  color: #f05033;
+}
+
+#experience .experience__container .experience__content .router:nth-of-type(6) svg {
+  color: #f94949;
+}
+
+#experience .experience__container .experience__content .redux:nth-of-type(7) svg {
+  color: #8043c4;
+}
+
+#experience .experience__container .experience__content .bootstrap:nth-of-type(8) svg {
+  color: #844fd0;
+}
+
+#experience .experience__container .experience__content .node:nth-of-type(9) svg {
+  color: #77ae64;
+}
+
+#experience .experience__container .experience__content .experience__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#experience .experience__container .experience__content .experience__details small {
+  font-size: 14px;
+}
+
+#experience .experience__container .experience__content .experience__details:hover {
+  background-color: #4db5ff;
+  cursor: default;
+  border-radius: 2rem;
+}
+
+#experience .experience__container .experience__content .experience__details:hover svg {
+  color: white;
+}
+
+#experience .experience__container .experience__content .experience__details:hover small.elementary {
+  color: darkgreen;
+}
+
+#experience .experience__container .experience__content .experience__details:hover small.low-intermediate {
+  color: darkorange;
+}
+
+#experience .experience__container .experience__content .experience__details:hover small.intermediate {
+  color: darkred;
+}
+
+#experience .experience__container .experience__content .experience__details svg {
+  color: #4db5ff;
+  -webkit-transition: .6s;
+  transition: .6s;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  #experience #experience .experience__content .experience__details {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+/*# sourceMappingURL=experience.css.map */

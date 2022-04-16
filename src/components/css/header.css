@@ -1,0 +1,108 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+header .header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+header .header__container h5 {
+  font-size: 3rem;
+}
+
+header .header__container h1 {
+  color: #4db5ff;
+}
+
+header .header__buttons {
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .me .header__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  justify-items: stretch;
+  height: 100%;
+  gap: 1rem;
+}
+
+header .me .header__socials a {
+  font-size: 2.5rem;
+}
+
+header .me .header__socials::after {
+  content: '';
+  width: 3px;
+  height: 2rem;
+  background-color: #4db5ff;
+}
+
+header .me img {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4db5ff), to(transparent));
+  background: linear-gradient(#4db5ff, transparent);
+  width: 100%;
+  height: 25rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+header .scroll__down {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  header .scroll__down {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

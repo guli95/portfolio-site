@@ -1,0 +1,39 @@
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.7rem;
+  z-index: 5;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  border-radius: 2.5rem;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
+}
+
+nav a {
+  padding: .9rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 2.5rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+nav a:hover {
+  color: #4db5ff;
+}
+
+nav a.active {
+  background-color: #1f1f38;
+  color: #4db5ff;
+}
+/*# sourceMappingURL=nav.css.map */

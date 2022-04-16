@@ -1,0 +1,28 @@
+@import '../index&variables-scss/variables.scss';
+nav{
+    background-color: rgba(0,0,0,0.3);
+    width: max-content;
+    padding: 0.7rem;
+    z-index: 5;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    display: flex;
+    gap: 1rem;
+    border-radius: 2.5rem;
+    backdrop-filter: blur(.5px);
+    a{
+       
+        padding: .9rem;
+        font-size: 1.5rem;
+        color: $--color-white;
+        border-radius: 2.5rem;
+        transition: .4s;
+        &:hover{color: $--color-primary;}
+       &.active{
+           background-color: $--color-bg;
+           color: $--color-primary;
+       }
+    }
+}

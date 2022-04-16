@@ -1,0 +1,81 @@
+@import '../index&variables-scss/variables.scss';
+#contact{
+    .contact__container{
+        width: 68%;
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        gap: 12%;
+        
+    }
+    .contact__options{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .contact__options-item{
+         background: linear-gradient(90deg, rgba(31,31,56,0.97) 25%, rgba(77,181,255,0.95) 49%, rgba(44,44,108,0.97) 83%);
+        background: radial-gradient(circle, rgba(238,174,202,1) 41%, rgba(148,187,233,1) 95%);
+        background: $--color-bg;
+         padding: 1rem 0.6rem;
+         border-radius: 1.2rem;
+         text-align: center;
+         border: 2px solid transparent;
+         transition: .4s;
+         &:hover{
+             background: transparent;
+             border-color: $--color-primary;
+             svg{color: $--color-primary;
+            ;}
+         }
+         h5{font-size: 1rem;}
+         svg{font-size: 1.5rem;}
+         h4{margin-bottom: 1rem;}
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 700px;
+        margin: 0 auto;
+        gap: 1.2rem;
+        background-color: rgba(#000000,  0.5);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        input, textarea{
+            width: 100%;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            background-color: transparent;
+            border: 2px solid $--color-primary;
+            resize: none;
+            font-family: inherit;
+            color: white;
+            &::placeholder{
+            color: #bbb;
+        font-size: 1rem;}
+            &:focus{border: 3px solid $--color-primary;
+            background-color: rgba(#000000,  0.7)}
+        }
+        textarea{height: 120%;
+        }
+        button{padding: 1rem;
+        text-align: center;
+    text-transform: uppercase;
+margin: 0 auto;
+font-family: 'Poppins', sans-serif;
+color: $--color-white;
+background-color: $--color-bg;
+&:hover{color: black;
+    background-color: white;}}
+    }
+    @media screen and (max-width:1024px) {
+        .contact__container{
+            grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:600px) {
+    .contact__container{
+       width:  $--container-width-sm;
+}
+}
+}

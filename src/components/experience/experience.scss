@@ -1,0 +1,112 @@
+@import "../index&variables-scss/variables.scss";
+#experience{
+    .experience__main-title{
+      
+        width: 35%;
+        margin: 0 auto;
+        border-radius: 2rem;
+        transition:  all .8s;
+        transition-delay: all .4s;
+        &:hover{transform: scale(1.05);}
+      }
+      .experience__main-title-anim{
+        transform: scale(1.05);
+        // background-color: rgba($--color-bg-variant, .3);
+        background: linear-gradient(90deg, rgba(31,31,56,0.35) 16%, rgba(77,181,255,0.3) 29%, rgba(44,44,108,0.4) 63%);
+}
+.experience__container{
+    background: linear-gradient(90deg, rgba(31,31,56,0.76234243697479) 16%, rgba(77,181,255,0.4009978991596639) 29%, rgba(44,44,108,0.908000700280112) 63%);
+    // background: radial-gradient(circle, rgba(238,174,202,0.804359243697479) 41%, rgba(148,187,233,0.6783088235294117) 95%);
+   border-radius: 2rem;
+   padding: 2rem;
+   .experience__content{
+       display: flex;
+       justify-content: space-around;
+       justify-items: center;
+       flex-wrap: wrap;
+      .html{
+        &:nth-of-type(1)
+            svg{ color: rgb(229, 76, 33);}}
+            .css{
+                &:nth-of-type(2)
+                   svg{ color: rgb(7, 35, 146);}}
+    
+            .javascript{
+                &:nth-of-type(3)
+                   svg{ color: yellow;}}
+                   .react{
+                    &:nth-of-type(4)
+                        svg{ color: rgb(97, 219, 251);}}
+                        .git{
+                            &:nth-of-type(5)
+                                svg{ color: rgb(240, 80, 51);}}
+                                .router{
+                                    &:nth-of-type(6)
+                                       svg{ color: rgb(249, 73, 73);}}
+      .redux{
+             &:nth-of-type(7)
+                svg{ color: rgb(128, 67, 196);}}
+      
+            
+            
+              .bootstrap{
+                &:nth-of-type(8)
+                    svg{ color: rgb(132, 79, 208);}}
+            
+           
+                    .node{
+                        &:nth-of-type(9)
+                           svg{ color: rgb(119, 174, 100);}}
+     
+      
+      
+      .experience__details{
+         display: flex;
+         flex-basis: 30%;
+        justify-content: center;
+        align-items: center;
+         gap: 1rem;
+         transition: .6s;
+       
+        small{font-size: 14px;}
+        
+         &:hover{
+            background-color: rgba($--color-primary,1);
+         
+            cursor:default;
+            border-radius: 2rem;
+            svg{
+                color: white;
+                
+            }
+            
+            small.elementary{color: darkgreen;
+            }
+            small.low-intermediate{color: darkorange;
+            }
+            small.intermediate{color: darkred;
+            }
+        }
+        svg{color: $--color-primary;
+            transition: .6s;
+        font-size: 1.5rem;
+        }
+      }
+    
+   }
+  
+
+}
+@media screen and (max-width: 1024px){
+   
+}
+@media screen and (max-width: 600px){
+    #experience{
+        
+    .experience__content{
+        .experience__details{
+        flex-basis: 70%;}
+    }
+}
+}
+}
